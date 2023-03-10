@@ -1,0 +1,25 @@
+﻿
+=====================================
+Type Arq Extract: Aleatorio
+Insertion metod:
+Num Regist: 1000
+Date : 09/44/2023 Hours: 09:44
+Execution Time: 0,103 seconds
+=====================================
+Insertion metod:
+Type Arq Extract: Aleatorio
+Num Regist: 10000
+Date : 09/02/2023 Hours: 09:45
+Execution Time: 1,114 seconds
+=====================================
+Insertion metod:
+Type Arq Extract: Aleatorio
+Num Regist: 1000
+Date : 26/02/2023 Hours: 22:51
+Execution Time: 0,147 seconds
+=====================================
+Insertion metod:
+Type Arq Extract: Ordenado
+Num Regist: 10000
+Date : 26/02/2023 Hours: 22:54
+Execution Time: 0,465 seconds

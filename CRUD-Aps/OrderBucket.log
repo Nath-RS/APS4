@@ -1,0 +1,37 @@
+﻿
+=====================================
+Type Arq Extract: Aleatorio
+Bucket metod:
+Num Regist: 1000
+Date : 09/43/2023 Hours: 09:43
+Execution Time: 0,095 seconds
+=====================================
+Bucket metod:
+Type Arq Extract: Aleatorio
+Num Regist: 1000
+Date : 09/02/2023 Hours: 09:43
+Execution Time: 0,092 seconds
+=====================================
+Bucket metod:
+Type Arq Extract: Aleatorio
+Num Regist: 10000
+Date : 09/02/2023 Hours: 09:44
+Execution Time: 0,372 seconds
+=====================================
+Bucket metod:
+Type Arq Extract: Aleatorio
+Num Regist: 1000
+Date : 26/02/2023 Hours: 22:50
+Execution Time: 0,143 seconds
+=====================================
+Bucket metod:
+Type Arq Extract: Aleatorio
+Num Regist: 10000
+Date : 26/02/2023 Hours: 22:53
+Execution Time: 0,608 seconds
+=====================================
+Bucket metod:
+Type Arq Extract: Ordenado
+Num Regist: 10000
+Date : 26/02/2023 Hours: 22:54
+Execution Time: 0,618 seconds

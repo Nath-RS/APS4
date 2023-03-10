@@ -1,0 +1,10 @@
+C:\Aps 4-sem\CRUD-Aps\CRUD-Aps\bin\Debug\CRUD-Aps.exe.config
+C:\Aps 4-sem\CRUD-Aps\CRUD-Aps\bin\Debug\CRUD-Aps.exe
+C:\Aps 4-sem\CRUD-Aps\CRUD-Aps\bin\Debug\CRUD-Aps.pdb
+C:\Aps 4-sem\CRUD-Aps\CRUD-Aps\obj\Debug\CRUD-Aps.csproj.AssemblyReference.cache
+C:\Aps 4-sem\CRUD-Aps\CRUD-Aps\obj\Debug\CRUD_Aps.frmCrud.resources
+C:\Aps 4-sem\CRUD-Aps\CRUD-Aps\obj\Debug\CRUD_Aps.Properties.Resources.resources
+C:\Aps 4-sem\CRUD-Aps\CRUD-Aps\obj\Debug\CRUD-Aps.csproj.GenerateResource.cache
+C:\Aps 4-sem\CRUD-Aps\CRUD-Aps\obj\Debug\CRUD-Aps.csproj.CoreCompileInputs.cache
+C:\Aps 4-sem\CRUD-Aps\CRUD-Aps\obj\Debug\CRUD-Aps.exe
+C:\Aps 4-sem\CRUD-Aps\CRUD-Aps\obj\Debug\CRUD-Aps.pdb
