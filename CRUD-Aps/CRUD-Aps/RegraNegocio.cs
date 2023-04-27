@@ -48,16 +48,12 @@ namespace CRUD_Aps
             
         }
 
-        public List<Registro> OrdenarBucketsRegistros(List<Registro> auxlisRegis)
+        public List<Registro> OrdenarBucketsRegistros(List<Registro> auxlisRegis,int quantidade)
         {
             List<Registro> Ordenado = new List<Registro>();
             try
             {
-
-                while (auxlisRegis.Count >= 1)
-                {
-                    Ordenado.Add(auxDataArqtxt.MenorRegistro(auxlisRegis));
-                }
+                Ordenado = auxDataArqtxt.BucketSort(auxlisRegis, quantidade);
                 Ordenado[0].Status = "OK";
             }
             catch (Exception ex)

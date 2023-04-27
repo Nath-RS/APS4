@@ -8,3 +8,13 @@ C:\Aps 4-sem\CRUD-Aps\CRUD-Aps\obj\Debug\CRUD-Aps.csproj.GenerateResource.cache
 C:\Aps 4-sem\CRUD-Aps\CRUD-Aps\obj\Debug\CRUD-Aps.csproj.CoreCompileInputs.cache
 C:\Aps 4-sem\CRUD-Aps\CRUD-Aps\obj\Debug\CRUD-Aps.exe
 C:\Aps 4-sem\CRUD-Aps\CRUD-Aps\obj\Debug\CRUD-Aps.pdb
+D:\Aps 4-sem\CRUD-Aps\CRUD-Aps\bin\Debug\CRUD-Aps.exe.config
+D:\Aps 4-sem\CRUD-Aps\CRUD-Aps\bin\Debug\CRUD-Aps.exe
+D:\Aps 4-sem\CRUD-Aps\CRUD-Aps\bin\Debug\CRUD-Aps.pdb
+D:\Aps 4-sem\CRUD-Aps\CRUD-Aps\obj\Debug\CRUD-Aps.csproj.AssemblyReference.cache
+D:\Aps 4-sem\CRUD-Aps\CRUD-Aps\obj\Debug\CRUD_Aps.frmCrud.resources
+D:\Aps 4-sem\CRUD-Aps\CRUD-Aps\obj\Debug\CRUD_Aps.Properties.Resources.resources
+D:\Aps 4-sem\CRUD-Aps\CRUD-Aps\obj\Debug\CRUD-Aps.csproj.GenerateResource.cache
+D:\Aps 4-sem\CRUD-Aps\CRUD-Aps\obj\Debug\CRUD-Aps.csproj.CoreCompileInputs.cache
+D:\Aps 4-sem\CRUD-Aps\CRUD-Aps\obj\Debug\CRUD-Aps.exe
+D:\Aps 4-sem\CRUD-Aps\CRUD-Aps\obj\Debug\CRUD-Aps.pdb

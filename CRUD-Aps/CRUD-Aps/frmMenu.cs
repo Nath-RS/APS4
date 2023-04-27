@@ -68,36 +68,39 @@ namespace CRUD_Aps
 
         private void setRegDGV(List<Registro> Ordenado)
         {
-            auxRegraNegocio = new RegraNegocio();
-            auxArquivo = new Arquivo();
-            DgvRelatorio.DataSource = null;
-            DgvRelatorio.Rows.Clear();
-            DgvRelatorio.Refresh();
-            auxArquivo.LocalArquivo = txtLocalFile.Text;
-            DgvRelatorio.DataSource = Ordenado;
+            if (Ordenado[0].Status != "OK")
+            {
+                MessageBox.Show(Ordenado[0].msg, "ERRO!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                auxRegraNegocio = new RegraNegocio();
+                auxArquivo = new Arquivo();
+                DgvRelatorio.DataSource = null;
+                DgvRelatorio.Rows.Clear();
+                DgvRelatorio.Refresh();
+                auxArquivo.LocalArquivo = txtLocalFile.Text;
+                DgvRelatorio.DataSource = Ordenado;
+            }
         }
 
-        private void OrderBuckets(List<Registro> OrdenaReg)
+        private List<Registro> OrderBuckets()
         {
+            List<Registro> OrdenaReg = new List<Registro>();
             try
             {
-                List<Registro>[] Buckets = new List<Registro>[DgvRelatorio.Rows.Count];
+                
                 Registro auxReg = null;
-
                 if (DgvRelatorio.Rows.Count <= 0)
                 {
-                    return;
+                    OrdenaReg[0].Status = "NOK";
+                    OrdenaReg[0].msg = "Lista de registros vazia";
+                    return OrdenaReg;
                 }
-
 
                 for (int i = 0; i < DgvRelatorio.Rows.Count; i++)
                 {
-                    Buckets[i] = new List<Registro>();
 
-                }
-                for (int i = 0; i < DgvRelatorio.Rows.Count; i++)
-                {
-                    
                     auxReg = new Registro();
 
                     auxReg.IdRegistro = Convert.ToInt32(DgvRelatorio.Rows[i].Cells[0].Value);
@@ -106,35 +109,30 @@ namespace CRUD_Aps
                     auxReg.Crime = DgvRelatorio.Rows[i].Cells[3].Value.ToString();
                     auxReg.regiao = DgvRelatorio.Rows[i].Cells[4].Value.ToString();
 
-                    float idx = (auxReg.IdRegistro /10);
-                    Buckets[(int)idx].Add(auxReg);
+                    OrdenaReg.Add(auxReg);
                 }
 
-                for (int i = 0; i < DgvRelatorio.Rows.Count/10; i++)
-                {
-                    Buckets[i] = auxRegraNegocio.OrdenarBucketsRegistros(Buckets[i]);
-                }
-
-                for (int i = 0; i < DgvRelatorio.Rows.Count; i++)
-                {
-                    for (int j = 0; j < Buckets[i].Count; j++)
-                    {
-                        OrdenaReg.Add(Buckets[i][j]);
-                    }
-                }
+                OrdenaReg = auxRegraNegocio.OrdenarBucketsRegistros(OrdenaReg, DgvRelatorio.Rows.Count);
                 btnSave.Enabled = true;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString(), "ERRO !", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-
+            return OrdenaReg;
         }
 
         private void OrderInsertion(List<Registro> OrdenaReg)
         {
-            Registro auxReg = null; try
+            Registro auxReg = null;
+            try
             {
+                if (DgvRelatorio.Rows.Count <= 0)
+                {
+                    OrdenaReg[0].Status = "NOK";
+                    OrdenaReg[0].msg = "Lista de registros vazia";
+                    return;
+                }
                 for (int i = 0; i < DgvRelatorio.Rows.Count; i++)
                 {
                     auxReg = new Registro();
@@ -160,7 +158,12 @@ namespace CRUD_Aps
             try
             {
                 Registro auxReg = null;
-
+                if (DgvRelatorio.Rows.Count <= 0)
+                {
+                    OrdenaReg[0].Status = "NOK";
+                    OrdenaReg[0].msg = "Lista de registros vazia";
+                    return;
+                }
                 for (int i = 0; i < DgvRelatorio.Rows.Count; i++)
                 {
                     auxReg = new Registro();
@@ -174,6 +177,7 @@ namespace CRUD_Aps
                 }
 
                 OrdenaReg = auxRegraNegocio.OrdenarSelectionRegistros(OrdenaReg);
+                
                 btnSave.Enabled = true;
             }
             catch (Exception ex)
@@ -232,10 +236,7 @@ namespace CRUD_Aps
                     btnDesordenar.Enabled = true;
                     txtResultOrder.Text = "0";
                 }
-
             }
-
-
         }
         private void btnProcurarArquivo_Click(object sender, EventArgs e)
         {
@@ -266,11 +267,12 @@ namespace CRUD_Aps
             List<Registro> OrdenarRegistro = new List<Registro>();
             auxArquivo = new Arquivo();
             stopwatch.Reset();
+
             if (rdbtnBucketSort.Checked)
             {
-                
+
                 stopwatch.Start();
-                this.OrderBuckets(OrdenarRegistro);
+                OrdenarRegistro = this.OrderBuckets();
                 this.setRegDGV(OrdenarRegistro);
                 this.NodeUserGrid();
                 auxArquivo.NomeArquivo = "Bucket";
@@ -301,9 +303,9 @@ namespace CRUD_Aps
             auxArquivo.LocalArquivo = txtLocalFile.Text;
             auxArquivo.msg = txtResultOrder.Text + " seconds";
             this.TypeArq(auxArquivo);
-            auxRegraNegocio.OrdenaArqlog(auxArquivo,OrdenarRegistro);
+            auxRegraNegocio.OrdenaArqlog(auxArquivo, OrdenarRegistro);
 
-            btnDesordenar.Enabled = false;
+
             btnOrdenar.Enabled = false;
             gpbMetodos.Enabled = false;
 
@@ -315,10 +317,10 @@ namespace CRUD_Aps
             rdbtnBucketSort.Checked = false;
             rdbtnSelectionSort.Checked = false;
 
-            //if (OrdenarRegistro[0].Status == "OK")
-            //{
-            //    MessageBox.Show("Registros ordenados Com sucesso", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //}
+            if (OrdenarRegistro[0].Status == "OK")
+            {
+                MessageBox.Show("Registros ordenados Com sucesso", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
 
         }
 
@@ -326,9 +328,9 @@ namespace CRUD_Aps
         {
             auxArquivo = new Arquivo();
 
-            DialogResult WindowSave = (DialogResult) svfdArqtxt.ShowDialog();
+            DialogResult WindowSave = (DialogResult)svfdArqtxt.ShowDialog();
 
-            if(WindowSave == DialogResult.OK)
+            if (WindowSave == DialogResult.OK)
             {
                 auxArquivo.LocalArquivo = svfdArqtxt.FileName;
                 auxArquivo.conteudo = new string[DgvRelatorio.Rows.Count];
@@ -355,7 +357,7 @@ namespace CRUD_Aps
                     MessageBox.Show("Arquivo Salvo com sucesso", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-            
+
         }
         private void btnDesordenar_Click(object sender, EventArgs e)
         {
@@ -394,7 +396,7 @@ namespace CRUD_Aps
 
         private void rdbtnAleatorio_Click(object sender, EventArgs e)
         {
-            gpbMetodos.Enabled = true;   
+            gpbMetodos.Enabled = true;
         }
 
         private void rdbtnSemiAleatorio_Click(object sender, EventArgs e)

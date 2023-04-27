@@ -35,3 +35,75 @@ Type Arq Extract: Ordenado
 Num Regist: 10000
 Date : 26/02/2023 Hours: 22:54
 Execution Time: 0,618 seconds
+=====================================
+Bucket metod:
+Type Arq Extract: Aleatorio
+Num Regist: 10000
+Date : 20/04/2023 Hours: 09:42
+Execution Time: 0,329 seconds
+=====================================
+Bucket metod:
+Type Arq Extract: Aleatorio
+Num Regist: 1000
+Date : 20/04/2023 Hours: 18:27
+Execution Time: 0,098 seconds
+=====================================
+Bucket metod:
+Type Arq Extract: Aleatorio
+Num Regist: 10000
+Date : 20/04/2023 Hours: 18:28
+Execution Time: 0,388 seconds
+=====================================
+Bucket metod:
+Type Arq Extract: Aleatorio
+Num Regist: 0
+Date : 24/04/2023 Hours: 14:18
+Execution Time: 0,042 seconds
+=====================================
+Bucket metod:
+Type Arq Extract: Aleatorio
+Num Regist: 0
+Date : 24/04/2023 Hours: 14:23
+Execution Time: 28,700 seconds
+=====================================
+Bucket metod:
+Type Arq Extract: Aleatorio
+Num Regist: 1000
+Date : 24/04/2023 Hours: 14:37
+Execution Time: 21,648 seconds
+=====================================
+Bucket metod:
+Type Arq Extract: Aleatorio
+Num Regist: 1000
+Date : 24/04/2023 Hours: 14:40
+Execution Time: 168,603 seconds
+=====================================
+Bucket metod:
+Type Arq Extract: Aleatorio
+Num Regist: 1000
+Date : 27/04/2023 Hours: 00:44
+Execution Time: 48,326 seconds
+=====================================
+Bucket metod:
+Type Arq Extract: Aleatorio
+Num Regist: 1000
+Date : 27/04/2023 Hours: 00:53
+Execution Time: 0,098 seconds
+=====================================
+Bucket metod:
+Type Arq Extract: Aleatorio
+Num Regist: 10000
+Date : 27/04/2023 Hours: 00:54
+Execution Time: 0,358 seconds
+=====================================
+Bucket metod:
+Type Arq Extract: Aleatorio
+Num Regist: 10000
+Date : 27/04/2023 Hours: 00:55
+Execution Time: 0,352 seconds
+=====================================
+Bucket metod:
+Type Arq Extract: Semi-Aleatorio
+Num Regist: 10000
+Date : 27/04/2023 Hours: 00:56
+Execution Time: 0,378 seconds

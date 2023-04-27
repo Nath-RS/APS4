@@ -23,3 +23,39 @@ Type Arq Extract: Ordenado
 Num Regist: 10000
 Date : 26/02/2023 Hours: 22:55
 Execution Time: 1,684 seconds
+=====================================
+Selection metod:
+Type Arq Extract: Aleatorio
+Num Regist: 1000
+Date : 20/04/2023 Hours: 18:19
+Execution Time: 0,106 seconds
+=====================================
+Selection metod:
+Type Arq Extract: Aleatorio
+Num Regist: 1000
+Date : 20/04/2023 Hours: 18:28
+Execution Time: 0,100 seconds
+=====================================
+Selection metod:
+Type Arq Extract: Aleatorio
+Num Regist: 10000
+Date : 20/04/2023 Hours: 18:29
+Execution Time: 1,112 seconds
+=====================================
+Selection metod:
+Type Arq Extract: Aleatorio
+Num Regist: 1000
+Date : 24/04/2023 Hours: 14:46
+Execution Time: 13,345 seconds
+=====================================
+Selection metod:
+Type Arq Extract: Aleatorio
+Num Regist: 1000
+Date : 27/04/2023 Hours: 00:53
+Execution Time: 0,101 seconds
+=====================================
+Selection metod:
+Type Arq Extract: Ordenado
+Num Regist: 10000
+Date : 27/04/2023 Hours: 00:54
+Execution Time: 1,076 seconds
