@@ -18,3 +18,13 @@ D:\Aps 4-sem\CRUD-Aps\CRUD-Aps\obj\Debug\CRUD-Aps.csproj.GenerateResource.cache
 D:\Aps 4-sem\CRUD-Aps\CRUD-Aps\obj\Debug\CRUD-Aps.csproj.CoreCompileInputs.cache
 D:\Aps 4-sem\CRUD-Aps\CRUD-Aps\obj\Debug\CRUD-Aps.exe
 D:\Aps 4-sem\CRUD-Aps\CRUD-Aps\obj\Debug\CRUD-Aps.pdb
+C:\GitHubClones\APS4\CRUD-Aps\CRUD-Aps\bin\Debug\CRUD-Aps.exe.config
+C:\GitHubClones\APS4\CRUD-Aps\CRUD-Aps\bin\Debug\CRUD-Aps.exe
+C:\GitHubClones\APS4\CRUD-Aps\CRUD-Aps\bin\Debug\CRUD-Aps.pdb
+C:\GitHubClones\APS4\CRUD-Aps\CRUD-Aps\obj\Debug\CRUD-Aps.csproj.AssemblyReference.cache
+C:\GitHubClones\APS4\CRUD-Aps\CRUD-Aps\obj\Debug\CRUD_Aps.frmCrud.resources
+C:\GitHubClones\APS4\CRUD-Aps\CRUD-Aps\obj\Debug\CRUD_Aps.Properties.Resources.resources
+C:\GitHubClones\APS4\CRUD-Aps\CRUD-Aps\obj\Debug\CRUD-Aps.csproj.GenerateResource.cache
+C:\GitHubClones\APS4\CRUD-Aps\CRUD-Aps\obj\Debug\CRUD-Aps.csproj.CoreCompileInputs.cache
+C:\GitHubClones\APS4\CRUD-Aps\CRUD-Aps\obj\Debug\CRUD-Aps.exe
+C:\GitHubClones\APS4\CRUD-Aps\CRUD-Aps\obj\Debug\CRUD-Aps.pdb
